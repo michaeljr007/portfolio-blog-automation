@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"]
+    },
     "typeRoots": ["./types", "./node_modules/@types"],
     "downlevelIteration": true,
     "allowJs": true,

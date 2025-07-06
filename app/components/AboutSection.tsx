@@ -16,10 +16,10 @@ import {
   Calendar,
   Star,
 } from "lucide-react";
-import myPic from "../../public/assets/images/myPic.jpg";
 
 interface AboutSectionProps {
   darkMode: boolean;
+  myPic: any;
 }
 
 const skills = [
@@ -36,7 +36,7 @@ const stats = [
   { label: "Code Commits", value: "2.5K+", icon: Code },
 ];
 
-export default function AboutSection({ darkMode }: AboutSectionProps) {
+export default function AboutSection({ darkMode, myPic }: AboutSectionProps) {
   return (
     <section
       id="about"

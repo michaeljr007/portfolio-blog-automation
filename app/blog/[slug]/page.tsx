@@ -8,6 +8,13 @@ import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
 import rehypeStringify from "rehype-stringify";
 
+export async function generateStaticParams() {
+  const files = fs.readdirSync(path.join(process.cwd(), "posts"));
+  return files.map((filename) => ({
+    slug: filename.replace(".md", ""),
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: {

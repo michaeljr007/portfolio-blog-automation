@@ -84,7 +84,7 @@ export default function Header() {
         <div className="text-center max-w-4xl mx-auto">
           <motion.div variants={itemVariants}>
             <motion.h1
-              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight"
+              className="text-4xl md:text-6xl font-semibold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 20 }}
             >

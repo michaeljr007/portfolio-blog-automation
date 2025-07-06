@@ -220,9 +220,10 @@ export default function PostContent({
             >
               <img
                 src={image}
-                alt=""
-                className="w-[90%] md:w-[30%] mx-auto mb-10"
+                alt="Thinking man with question mark"
+                className="w-[90%] md:w-[30%] mx-auto mb-10 rounded-lg"
               />
+
               <div
                 className="prose-headings:text-gray-900 dark:prose-headings:text-white prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-code:text-purple-600 dark:prose-code:text-purple-400 prose-pre:bg-gray-100 dark:prose-pre:bg-gray-800 prose-blockquote:border-l-blue-500 prose-blockquote:text-gray-600 dark:prose-blockquote:text-gray-400 prose dark:prose-invert prose-lg space-y-4"
                 dangerouslySetInnerHTML={{ __html: contentHtml }}

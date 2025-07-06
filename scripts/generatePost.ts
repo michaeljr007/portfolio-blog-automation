@@ -39,7 +39,7 @@ Return only a raw JSON object with the following structure. DO NOT wrap in markd
   "title": "How to Triple your income as a content creator using AI",
   "summary": "A brief summary suitable for SEO meta description.",
   "content": "The full blog post content in markdown format, including headings, lists, and paragraphs.",
-  "image": "/assets/images/tripple-income.jpg",
+  "image": "@/assets/images/tripple-income.jpg",
   "category": "Technology"
 }
 
@@ -67,8 +67,6 @@ Topic: How to Triple your income as a creator using AI. Make it engaging, relata
     for await (const chunk of response) {
       rawResponse += chunk.text || "";
     }
-
-    console.log("🔵 Raw response:\n", rawResponse);
 
     // Remove markdown block if accidentally wrapped
     const cleanResponse = rawResponse

@@ -1,12 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import myPic from "../public/assets/images/myPic.jpg";
-import pixelperfect from "../public/assets/images/pixelperfect.png";
-import boch from "../public/assets/images/boch systems.png";
-import discovery from "../public/assets/images/discovery.png";
-import nma from "../public/assets/images/everythingnma.png";
-import propertypro from "../public/assets/images/proDash2.png";
-import rehoboth from "../public/assets/images/rehoboth.png";
+import myPic from "./assets/images/myPic.jpg";
+import pixelperfect from "./assets/images/pixelperfect.png";
+import boch from "./assets/images/boch systems.png";
+import discovery from "./assets/images/discovery.png";
+import nma from "./assets/images/everythingnma.png";
+import propertypro from "./assets/images/proDash2.png";
+import rehoboth from "./assets/images/rehoboth.png";
 import Header from "./components/Header";
 import Nav from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
@@ -150,7 +150,7 @@ export default function Home() {
         darkMode={darkMode}
       />
       <HomeSection darkMode={darkMode} />
-      <AboutSection darkMode={darkMode} />
+      <AboutSection darkMode={darkMode} myPic={myPic} />
       <PortfolioSection
         filter={filter}
         setFilter={setFilter}
