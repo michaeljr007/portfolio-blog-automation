@@ -33,7 +33,7 @@
     "build": "next build",
     "start": "next start",
     "generate-post": "node scripts/generatePost.js",
-    "deploy": "git add posts && git commit -m 'Add new blog post' && git push",
+    "deploy": "git add . && git commit -m \"Add new blog post\" && git push origin master",
     "daily-blog": "npm run generate-post && npm run build && npm run deploy"
   },
   "devDependencies": {
