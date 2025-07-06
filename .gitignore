@@ -1,0 +1,37 @@
+# Node modules
+/node_modules/
+
+# Next.js build output
+/.next/
+/out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables (API keys, secrets)
+.env
+.env.local
+.env.*.local
+
+# VSCode settings (optional)
+.vscode/
+
+# MacOS system files (optional)
+.DS_Store
+
+# Optional: local IDE/editor files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Optional: coverage reports
+coverage/
+
+# Optional: generated posts or scripts output if you want to exclude
+# /posts/generated/
+
+# Optional: npm/yarn lock files (usually you want to keep these though)
+# package-lock.json
+# yarn.lock
