@@ -15,12 +15,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script
-          src="https://fpyf8.com/88/tag.min.js"
-          data-zone="155996"
-          async
+          src="https://cmp.gatekeeperconsent.com/min.js"
           data-cfasync="false"
         ></script>
-
+        <script
+          src="https://the.gatekeeperconsent.com/cmp.min.js"
+          data-cfasync="false"
+        ></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content={metadata.description} />
 
@@ -47,6 +48,11 @@ export default function RootLayout({
           rel="icon"
           href="https://res.cloudinary.com/ded2uopl7/image/upload/v1751852355/michaelLogo_s5lfc6.jpg"
         />
+        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
+        <script>
+          window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd =
+          ezstandalone.cmd || [];
+        </script>
         <title>{metadata.title}</title>
       </head>
       <body>{children}</body>

