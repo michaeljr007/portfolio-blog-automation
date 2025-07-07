@@ -14,6 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          src="https://fpyf8.com/88/tag.min.js"
+          data-zone="155996"
+          async
+          data-cfasync="false"
+        ></script>
         <meta
           name="keywords"
           content="web development, responsive websites, frontend, backend, react, nextjs, portfolio, michael isih"

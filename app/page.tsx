@@ -1,6 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import propertypro from "./assets/images/proDash2.png";
 import Header from "./components/Header";
 import Nav from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
@@ -38,7 +37,8 @@ const portfolioItems: PortfolioItem[] = [
     description:
       "A comprehensive management tool for property owners with advanced analytics.",
     category: "product",
-    image: propertypro,
+    image:
+      "https://res.cloudinary.com/ded2uopl7/image/upload/v1751851101/proDash2_vep2sa.png",
     technologies: ["Next.js", "MongoDB", "Node.js"],
     link: "https://babakaya.ng/",
   },
