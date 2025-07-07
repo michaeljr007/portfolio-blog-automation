@@ -12,14 +12,12 @@ import {
   Twitter,
   Download,
   Mail,
-  MapPin,
   Calendar,
   Star,
 } from "lucide-react";
 
 interface AboutSectionProps {
   darkMode: boolean;
-  myPic: any;
 }
 
 const skills = [
@@ -29,18 +27,11 @@ const skills = [
   { name: "Backend Development", icon: Monitor, percentage: 80 },
 ];
 
-const stats = [
-  { label: "Years Experience", value: "5+", icon: Calendar },
-  { label: "Projects Completed", value: "150+", icon: Award },
-  { label: "Happy Clients", value: "98%", icon: Star },
-  { label: "Code Commits", value: "2.5K+", icon: Code },
-];
-
-export default function AboutSection({ darkMode, myPic }: AboutSectionProps) {
+export default function AboutSection({ darkMode }: AboutSectionProps) {
   return (
     <section
       id="about"
-      className={`py-20 lg:py-32 relative overflow-hidden ${
+      className={`py-20 relative overflow-hidden ${
         darkMode ? "dark:bg-dark-surface" : "bg-gray-50"
       }`}
     >
@@ -122,8 +113,10 @@ export default function AboutSection({ darkMode, myPic }: AboutSectionProps) {
                 {/* Main Image */}
                 <div className="relative">
                   <Image
-                    src={myPic}
+                    src="https://res.cloudinary.com/ded2uopl7/image/upload/v1751851099/myPic_t1hgcf.jpg"
                     alt="Professional Portrait"
+                    width={520}
+                    height={120}
                     className="rounded-2xl w-full shadow-2xl relative z-10 object-cover scale-[0.8]" // Reduced size by 20%
                   />
 
@@ -276,54 +269,6 @@ export default function AboutSection({ darkMode, myPic }: AboutSectionProps) {
               </div>
             </motion.div>
           </div>
-
-          {/* Stats Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
-          >
-            {stats.map((stat, index) => (
-              <motion.div
-                key={stat.label}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className={`text-center p-6 rounded-2xl backdrop-blur-sm border ${
-                  darkMode
-                    ? "dark:bg-dark-elevated/50 border-gray-700/50"
-                    : "bg-white/50 border-gray-200/50"
-                } hover:shadow-lg transition-all duration-300`}
-              >
-                <div className="flex justify-center mb-3">
-                  <div className="p-3 bg-blue-500/10 rounded-full">
-                    <stat.icon className="w-6 h-6 text-blue-500" />
-                  </div>
-                </div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  whileInView={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 + 0.2 }}
-                  viewport={{ once: true }}
-                  className={`text-2xl lg:text-3xl font-bold mb-2 ${
-                    darkMode ? "text-white" : "text-gray-900"
-                  }`}
-                >
-                  {stat.value}
-                </motion.div>
-                <p
-                  className={`text-sm ${
-                    darkMode ? "text-gray-400" : "text-gray-600"
-                  }`}
-                >
-                  {stat.label}
-                </p>
-              </motion.div>
-            ))}
-          </motion.div>
         </motion.div>
       </div>
     </section>

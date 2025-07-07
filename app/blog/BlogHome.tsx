@@ -20,7 +20,7 @@ import {
   Share2,
   Eye,
 } from "lucide-react";
-import Nav from "../components/Navbar";
+import BlogNav from "@/components/BlogNavbar";
 
 const BlogHome = ({ posts }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -252,7 +252,7 @@ const BlogHome = ({ posts }) => {
 
   return (
     <>
-      <Nav
+      <BlogNav
         darkMode={darkMode}
         activeSection={activeSection}
         setDarkMode={setDarkMode}

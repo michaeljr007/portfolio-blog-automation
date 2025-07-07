@@ -16,6 +16,7 @@ import {
   Calendar,
   Play,
 } from "lucide-react";
+import Link from "next/link";
 
 interface PortfolioSectionProps {
   filter: "all" | "app" | "product" | "branding";
@@ -101,7 +102,6 @@ export default function PortfolioSection({
 
   const filterCategories = [
     { key: "all", label: "All Projects", icon: Layers },
-    { key: "app", label: "Mobile Apps", icon: Smartphone },
     { key: "product", label: "Web Products", icon: Monitor },
     { key: "branding", label: "Branding", icon: Palette },
   ];
@@ -279,7 +279,13 @@ export default function PortfolioSection({
                             whileTap={{ scale: 0.95 }}
                             className="p-2.5 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors shadow-lg"
                           >
-                            <ExternalLink className="w-4 h-4 text-gray-800" />
+                            <Link
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="w-4 h-4 text-gray-800" />
+                            </Link>
                           </motion.button>
                         </div>
                       </div>
@@ -297,19 +303,6 @@ export default function PortfolioSection({
                           </span>
                         </div>
                       </div>
-
-                      {/* Play Button for Interactive Projects */}
-                      {index % 3 === 0 && (
-                        <motion.button
-                          initial={{ scale: 0 }}
-                          whileInView={{ scale: 1 }}
-                          transition={{ duration: 0.3, delay: 0.2 }}
-                          whileHover={{ scale: 1.1 }}
-                          className="absolute bottom-4 left-4 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-all duration-300"
-                        >
-                          <Play className="w-4 h-4 text-gray-800" />
-                        </motion.button>
-                      )}
                     </div>
 
                     {/* Project Details */}
@@ -327,7 +320,13 @@ export default function PortfolioSection({
                           whileHover={{ scale: 1.1, rotate: 45 }}
                           className="flex-shrink-0 p-1 text-gray-400 hover:text-blue-500 transition-colors"
                         >
-                          <ArrowUpRight className="w-4 h-4" />
+                          <Link
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ArrowUpRight className="w-4 h-4" />
+                          </Link>
                         </motion.button>
                       </div>
 

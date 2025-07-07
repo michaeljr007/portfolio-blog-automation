@@ -126,7 +126,7 @@ export default function Footer({ darkMode }: FooterProps) {
                   whileHover={{ scale: 1.05 }}
                 >
                   <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                    Your Name
+                    Michael Isih
                   </span>
                 </motion.h3>
                 <div className="flex items-center justify-center md:justify-start gap-2 text-sm">
@@ -145,7 +145,7 @@ export default function Footer({ darkMode }: FooterProps) {
                 className="flex items-center gap-4"
               >
                 <motion.a
-                  href="mailto:hello@yourname.com"
+                  href="mailto:michaelisih.dev@gmail.com"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className={`flex items-center gap-2 px-4 py-2 rounded-full border transition-all duration-300 ${
@@ -156,6 +156,9 @@ export default function Footer({ darkMode }: FooterProps) {
                 >
                   <Mail className="w-4 h-4" />
                   <span className="text-sm font-medium">Get in touch</span>
+                  <span className="text-sm font-medium">
+                    michaelisih.dev@gmail.com
+                  </span>
                 </motion.a>
               </motion.div>
             </div>
@@ -175,7 +178,8 @@ export default function Footer({ darkMode }: FooterProps) {
                       darkMode ? "text-gray-400" : "text-gray-600"
                     }`}
                   >
-                    © 2025 Your Name. All rights reserved.
+                    © {new Date().getFullYear()} Michael Isih. All rights
+                    reserved.
                   </p>
                 </div>
 

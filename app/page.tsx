@@ -1,12 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import myPic from "./assets/images/myPic.jpg";
-import pixelperfect from "./assets/images/pixelperfect.png";
-import boch from "./assets/images/boch systems.png";
-import discovery from "./assets/images/discovery.png";
-import nma from "./assets/images/everythingnma.png";
 import propertypro from "./assets/images/proDash2.png";
-import rehoboth from "./assets/images/rehoboth.png";
 import Header from "./components/Header";
 import Nav from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
@@ -32,10 +26,11 @@ const portfolioItems: PortfolioItem[] = [
     title: "Pixel Perfect Studios",
     description:
       "A creative studio website with a focus on modern design and seamless user experience.",
-    category: "app",
-    image: pixelperfect,
+    category: "branding",
+    image:
+      "https://res.cloudinary.com/ded2uopl7/image/upload/v1751851110/pixelperfect_pkmyej.png",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
-    link: "#",
+    link: "https://pixelperfectstudios.ng/",
   },
   {
     id: 2,
@@ -45,7 +40,7 @@ const portfolioItems: PortfolioItem[] = [
     category: "product",
     image: propertypro,
     technologies: ["Next.js", "MongoDB", "Node.js"],
-    link: "#",
+    link: "https://babakaya.ng/",
   },
   {
     id: 3,
@@ -53,19 +48,21 @@ const portfolioItems: PortfolioItem[] = [
     description:
       "Complete branding and website solution for a cutting-edge tech company.",
     category: "branding",
-    image: boch,
+    image:
+      "https://res.cloudinary.com/ded2uopl7/image/upload/v1751851108/boch_systems_htdnay.png",
     technologies: ["Figma", "React", "Framer Motion"],
-    link: "#",
+    link: "https://bochsystems.netlify.app/",
   },
   {
     id: 4,
-    title: "Discovery Suites Enugu",
+    title: "Gaga Hotel",
     description:
-      "A luxury hotel booking platform with elegant design and smooth interactions.",
-    category: "app",
-    image: discovery,
+      "A luxury hotel website with elegant design and smooth interactions.",
+    category: "product",
+    image:
+      "https://res.cloudinary.com/ded2uopl7/image/upload/v1751856448/gagahotel_nk7pzv.png",
     technologies: ["Vue.js", "Nuxt.js", "PostgreSQL"],
-    link: "#",
+    link: "https://gagahotels.com/",
   },
   {
     id: 5,
@@ -73,9 +70,10 @@ const portfolioItems: PortfolioItem[] = [
     description:
       "E-commerce platform for fashion enthusiasts with modern shopping experience.",
     category: "branding",
-    image: nma,
+    image:
+      "https://res.cloudinary.com/ded2uopl7/image/upload/v1751851106/everythingnma_m4btpk.png",
     technologies: ["Shopify", "React", "GraphQL"],
-    link: "#",
+    link: "https://everythingnma.com/",
   },
   {
     id: 6,
@@ -83,16 +81,15 @@ const portfolioItems: PortfolioItem[] = [
     description:
       "Professional website for a leading cable manufacturing company.",
     category: "product",
-    image: rehoboth,
+    image:
+      "https://res.cloudinary.com/ded2uopl7/image/upload/v1751851110/rehoboth_mvpjsw.png",
     technologies: ["WordPress", "PHP", "MySQL"],
-    link: "#",
+    link: "https://rehobothstandardcables.com/",
   },
 ];
 
 export default function Home() {
-  const [filter, setFilter] = useState<"all" | "app" | "product" | "branding">(
-    "all"
-  );
+  const [filter, setFilter] = useState<"all" | "product" | "branding">("all");
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [darkMode, setDarkMode] = useState(true);
   const [activeSection, setActiveSection] = useState("home");
@@ -150,7 +147,7 @@ export default function Home() {
         darkMode={darkMode}
       />
       <HomeSection darkMode={darkMode} />
-      <AboutSection darkMode={darkMode} myPic={myPic} />
+      <AboutSection darkMode={darkMode} />
       <PortfolioSection
         filter={filter}
         setFilter={setFilter}

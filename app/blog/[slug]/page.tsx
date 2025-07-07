@@ -32,7 +32,8 @@ export async function generateMetadata({
 }
 
 export default async function Post({ params }) {
-  const filePath = path.join(process.cwd(), "posts", `${params.slug}.md`);
+  const decodedSlug = decodeURIComponent(params.slug);
+  const filePath = path.join(process.cwd(), "posts", `${decodedSlug}.md`);
   const fileContents = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(fileContents);
   const processedContent = await remark()

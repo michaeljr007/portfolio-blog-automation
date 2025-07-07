@@ -3,7 +3,6 @@ import { motion, Variants } from "framer-motion";
 import {
   Mail,
   Phone,
-  MapPin,
   Send,
   User,
   MessageCircle,
@@ -97,20 +96,14 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@yourname.com",
+      value: "michaelisih.dev@gmail.com",
       color: "bg-gradient-to-r from-blue-500 to-purple-600",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+2349037590527",
       color: "bg-gradient-to-r from-green-500 to-teal-600",
-    },
-    {
-      icon: MapPin,
-      label: "Location",
-      value: "New York, NY",
-      color: "bg-gradient-to-r from-pink-500 to-red-600",
     },
   ];
 
