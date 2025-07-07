@@ -35,7 +35,7 @@ export default function Lightbox({
             >
               <X className="w-8 h-8" />
             </button>
-            <Image
+            <img
               src={selectedImage}
               alt="Lightbox"
               width={800}

@@ -139,7 +139,7 @@ export default function BlogNav({
             >
               <motion.div className="relative">
                 <Link
-                  href="https://ancestor-group.com.ng/"
+                  href="/"
                   className={`relative px-4 py-2 rounded-xl font-medium transition-all duration-300 flex items-center space-x-2 group ${
                     isActive("home")
                       ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
@@ -335,7 +335,7 @@ export default function BlogNav({
                 <div className="space-y-2">
                   <motion.div variants={mobileItemVariants}>
                     <Link
-                      href="/"
+                      href="https://ancestor-group.com.ng/"
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 group ${
                         isActive("home")
