@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Award,
@@ -112,7 +111,7 @@ export default function AboutSection({ darkMode }: AboutSectionProps) {
 
                 {/* Main Image */}
                 <div className="relative">
-                  <Image
+                  <img
                     src="https://res.cloudinary.com/ded2uopl7/image/upload/v1751851099/myPic_t1hgcf.jpg"
                     alt="Professional Portrait"
                     width={520}

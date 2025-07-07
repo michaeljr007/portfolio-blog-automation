@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import {
   Smartphone,
@@ -251,7 +250,7 @@ export default function PortfolioSection({
                         onClick={() => setSelectedImage(item.image)}
                         className="w-full block"
                       >
-                        <Image
+                        <img
                           src={item.image}
                           alt={item.title}
                           width={400}
