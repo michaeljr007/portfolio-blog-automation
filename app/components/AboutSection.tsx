@@ -11,8 +11,6 @@ import {
   Twitter,
   Download,
   Mail,
-  Calendar,
-  Star,
 } from "lucide-react";
 
 interface AboutSectionProps {
