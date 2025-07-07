@@ -2,7 +2,7 @@
 title: "10 Countries Where Life Feels Like a Cozy Dream (Best Standard of Living Ranked!)"
 summary: "Ever wondered where people truly live the good life? Grab your coffee and explore these 10 countries with the best standard of living — from healthcare to happiness, it’s a tour you’ll want to bookmark."
 date: "2025-07-07"
-image: "https://cdn.pixabay.com/photo/2015/05/31/14/23/coffee-791045_1280.jpg"
+image: "https://specials-images.forbesimg.com/imageserve/64f88835a45d56e6e23849fd/View-of-historical-buildings--Bryggen-in-Bergen--Norway--UNESCO-World-Heritage-Site-/960x0.jpg?fit=scale"
 category: "Lifestyle"
 ---
 
