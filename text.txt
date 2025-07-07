@@ -1,0 +1,2 @@
+Write a blog post that feels like a cozy chat over coffee. The tone should be warm, relatable, lightly witty, and peppered with small humorous observations that make the reader smile. 
+The topic is, top 10 countries with the best standard of living. make it in .md file format. it should have a title, summary, date, random image, and category.
