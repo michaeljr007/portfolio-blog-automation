@@ -335,7 +335,7 @@ export default function BlogNav({
                 <div className="space-y-2">
                   <motion.div variants={mobileItemVariants}>
                     <Link
-                      href="https://ancestor-group.com.ng/"
+                      href="/"
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 group ${
                         isActive("home")
