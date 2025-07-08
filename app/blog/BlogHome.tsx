@@ -125,7 +125,12 @@ const BlogHome = ({ posts }) => {
         whileHover="hover"
         className="group"
       >
-        <Link key={index} href={`/blog/${post.slug}`}>
+        <Link
+          key={index}
+          href={`/blog/${post.slug}`}
+          scroll={false}
+          replace={false}
+        >
           <div className="bg-white dark:bg-dark-elevated rounded-2xl p-6 shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300 cursor-pointer h-full flex flex-col">
             {/* Header */}
             <div className="flex items-start justify-between mb-4">

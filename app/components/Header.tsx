@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { ChevronDown, Code, Palette, Zap, Moon, Sun } from "lucide-react";
+import Link from "next/link";
 
 export default function Header() {
   const { scrollY } = useScroll();
@@ -131,20 +132,24 @@ export default function Header() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-16"
           >
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-600 dark:to-purple-600 hover:from-blue-400 dark:hover:from-blue-500 hover:to-purple-400 dark:hover:to-purple-500 rounded-2xl font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              View My Work
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white/10 dark:bg-white/10 hover:bg-white/20 dark:hover:bg-white/20 border border-white/40 dark:border-white/30 backdrop-blur-lg rounded-2xl font-semibold text-white transition-all duration-300"
-            >
-              Get In Touch
-            </motion.button>
+            <Link href={"#portfolio"}>
+              <motion.button
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-600 dark:to-purple-600 hover:from-blue-400 dark:hover:from-blue-500 hover:to-purple-400 dark:hover:to-purple-500 rounded-2xl font-semibold text-white shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                View My Work
+              </motion.button>
+            </Link>
+            <Link href={"#contact"}>
+              <motion.button
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-white/10 dark:bg-white/10 hover:bg-white/20 dark:hover:bg-white/20 border border-white/40 dark:border-white/30 backdrop-blur-lg rounded-2xl font-semibold text-white transition-all duration-300"
+              >
+                Get In Touch
+              </motion.button>
+            </Link>
           </motion.div>
 
           <motion.div variants={itemVariants} className="flex justify-center">

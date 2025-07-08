@@ -12,6 +12,7 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import Link from "next/link";
 
 interface HomeSectionProps {
   darkMode: boolean;
@@ -225,27 +226,30 @@ export default function HomeSection({ darkMode }: HomeSectionProps) {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-12"
           >
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
-            >
-              <span>View My Work</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </motion.button>
-
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              className={`group px-8 py-4 border-2 rounded-2xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
-                darkMode
-                  ? "border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white hover:border-gray-500"
-                  : "border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400"
-              } backdrop-blur-sm`}
-            >
-              <Mail className="w-5 h-5" />
-              <span>Contact Me</span>
-            </motion.button>
+            <Link href={"#portfolio"}>
+              <motion.button
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className="group relative px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-2xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2"
+              >
+                <span>View My Work</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </motion.button>
+            </Link>
+            <Link href={"#contact"}>
+              <motion.button
+                whileHover={{ scale: 1.05, y: -2 }}
+                whileTap={{ scale: 0.95 }}
+                className={`group px-8 py-4 border-2 rounded-2xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 ${
+                  darkMode
+                    ? "border-gray-600 text-gray-300 hover:bg-gray-700 hover:text-white hover:border-gray-500"
+                    : "border-gray-300 text-gray-700 hover:bg-gray-50 hover:border-gray-400"
+                } backdrop-blur-sm`}
+              >
+                <Mail className="w-5 h-5" />
+                <span>Contact Me</span>
+              </motion.button>
+            </Link>
 
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
