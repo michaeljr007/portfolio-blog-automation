@@ -1,6 +1,6 @@
 ---
 title: "Is AI here to take our jobs?"
-summary: "The answer? Yes and no. Grab a cup of coffee and let’s untangle this together — with a few laughs along the way."
+summary: "The answer? Yes and no. Grab a cup of coffee and let’s untangle this together, with a few laughs along the way."
 date: "2025-07-07"
 image: "https://imageio.forbes.com/specials-images/imageserve/66444854e7ceb95a03ff2c63/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds"
 category: "Tech Musings"
@@ -17,7 +17,7 @@ So, is AI coming for your job?
 **Yes.**  
 If your job involves doing the same task a hundred times a day, with the creative excitement of watching paint dry, well... AI is lurking around the corner. Those repetitive tasks are exactly what AI is salivating over (if AI could salivate). It doesn’t get bored, doesn’t check its phone every 7 minutes, and certainly doesn’t need a coffee run.
 
-But also — **No.**  
+But also, **No.**  
 Because humans are messy, gloriously unpredictable, and full of _spark._ That spark is hard to code. AI might write a poem, but it probably won’t accidentally make it about your aunt’s weird obsession with frogs, unless you specifically told it to. And half of human innovation comes from accidents, curiosity, or flat-out mistakes. (Penicillin, anyone?)
 
 ---
@@ -44,14 +44,14 @@ Also, AI doesn’t appreciate a good croissant. It doesn’t giggle when a dog s
 
 ### So where does that leave us?
 
-Maybe the real question isn’t “Will AI take my job?” but “How can I use AI to do my job better — or create entirely new jobs we haven’t dreamed up yet?”
+Maybe the real question isn’t “Will AI take my job?” but “How can I use AI to do my job better, or create entirely new jobs we haven’t dreamed up yet?”
 
 Because let’s be honest, we’re all already using AI. (Hello, spellcheck, you sweet savior of dignity.) The key is to learn, adapt, and keep doing the wonderfully odd human things that no algorithm can replicate.
 
-So no — AI isn’t here to _just_ take your job. It’s here to change the game. And like every other game change in history, the trick is to keep playing.
+So no, AI isn’t here to _just_ take your job. It’s here to change the game. And like every other game change in history, the trick is to keep playing.
 
 ---
 
-☕ Alright, your coffee’s probably getting cold. What do you think? Is AI a friendly sidekick, or a sneaky job thief in a slick digital trench coat? Let me know — we can debate it over another cup.
+☕ Alright, your coffee’s probably getting cold. What do you think? Is AI a friendly sidekick, or a sneaky job thief in a slick digital trench coat? Let me know, we can debate it over another cup.
 
 ---
