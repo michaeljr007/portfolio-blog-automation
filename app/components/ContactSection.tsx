@@ -36,7 +36,6 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
     e.preventDefault();
     setIsSubmitted(true);
 
-    // Reset form after animation
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
@@ -110,7 +109,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
   return (
     <section
       id="contact"
-      className={`relative py-24 overflow-hidden ${
+      className={`relative py-20 overflow-hidden ${
         darkMode
           ? "bg-gradient-to-br from-gray-900 via-dark-surface to-gray-800"
           : "bg-gradient-to-br from-gray-50 via-white to-blue-50"
@@ -136,15 +135,16 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
+        {/* ↓ Scale entire section by 0.8 (80%) ↓ */}
         <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-7xl mx-auto"
+          className="max-w-7xl mx-auto scale-[.8] md:scale-[1]"
         >
           {/* Header */}
-          <motion.div variants={itemVariants} className="text-center mb-20">
+          <motion.div variants={itemVariants} className="text-center mb-16">
             <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
@@ -163,7 +163,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
             </motion.div>
 
             <h2
-              className={`text-5xl md:text-6xl font-bold mb-6 ${
+              className={`text-4xl md:text-5xl font-bold mb-4 ${
                 darkMode ? "text-white" : "text-gray-900"
               }`}
             >
@@ -175,7 +175,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
             </h2>
 
             <p
-              className={`text-xl max-w-2xl mx-auto ${
+              className={`text-lg max-w-2xl mx-auto ${
                 darkMode ? "text-gray-300" : "text-gray-600"
               }`}
             >
@@ -184,26 +184,26 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-14 items-start">
             {/* Contact Info */}
-            <motion.div variants={itemVariants} className="space-y-8">
+            <motion.div variants={itemVariants} className="space-y-6">
               <motion.div
                 variants={cardVariants}
-                className={`p-8 rounded-2xl backdrop-blur-sm border ${
+                className={`p-6 rounded-2xl backdrop-blur-sm border ${
                   darkMode
                     ? "bg-dark-elevated/50 border-gray-700/50"
                     : "bg-white/70 border-gray-200/50"
                 } shadow-xl`}
               >
                 <h3
-                  className={`text-3xl font-bold mb-6 ${
+                  className={`text-2xl font-bold mb-5 ${
                     darkMode ? "text-white" : "text-gray-900"
                   }`}
                 >
                   Get in Touch
                 </h3>
 
-                <div className="space-y-6">
+                <div className="space-y-5">
                   {contactInfo.map((item, index) => (
                     <motion.div
                       key={index}
@@ -212,7 +212,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                       transition={{ delay: index * 0.1 + 0.3 }}
                       viewport={{ once: true }}
                       whileHover={{ scale: 1.02 }}
-                      className={`flex items-center gap-4 p-4 rounded-xl transition-all duration-300 ${
+                      className={`flex items-center gap-4 p-3 rounded-xl transition-all duration-300 ${
                         darkMode
                           ? "hover:bg-gray-700/30"
                           : "hover:bg-gray-50/80"
@@ -221,9 +221,9 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                       <motion.div
                         whileHover={{ rotate: 360 }}
                         transition={{ duration: 0.6 }}
-                        className={`p-3 ${item.color} text-white rounded-xl shadow-lg`}
+                        className={`p-2 ${item.color} text-white rounded-xl shadow-lg`}
                       >
-                        <item.icon className="w-6 h-6" />
+                        <item.icon className="w-5 h-5" />
                       </motion.div>
                       <div>
                         <p
@@ -234,7 +234,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                           {item.label}
                         </p>
                         <p
-                          className={`text-lg ${
+                          className={`text-base ${
                             darkMode ? "text-gray-300" : "text-gray-600"
                           }`}
                         >
@@ -249,16 +249,16 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
               {/* Decorative card */}
               <motion.div
                 variants={cardVariants}
-                className={`p-6 rounded-2xl backdrop-blur-sm border ${
+                className={`p-5 rounded-2xl backdrop-blur-sm border ${
                   darkMode
                     ? "bg-gradient-to-br from-blue-900/20 to-purple-900/20 border-blue-500/20"
                     : "bg-gradient-to-br from-blue-50 to-purple-50 border-blue-200/30"
                 } shadow-lg`}
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <MessageCircle className="w-6 h-6 text-blue-500" />
+                <div className="flex items-center gap-3 mb-2">
+                  <MessageCircle className="w-5 h-5 text-blue-500" />
                   <h4
-                    className={`text-lg font-semibold ${
+                    className={`text-base font-semibold ${
                       darkMode ? "text-white" : "text-gray-900"
                     }`}
                   >
@@ -280,7 +280,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
             <motion.div variants={itemVariants}>
               <motion.div
                 variants={cardVariants}
-                className={`p-8 rounded-2xl backdrop-blur-sm border ${
+                className={`p-6 rounded-2xl backdrop-blur-sm border ${
                   darkMode
                     ? "bg-dark-elevated/50 border-gray-700/50"
                     : "bg-white/70 border-gray-200/50"
@@ -288,76 +288,47 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
               >
                 <motion.form
                   onSubmit={handleSubmit}
-                  className="space-y-6"
+                  className="space-y-5"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <motion.div
-                      whileHover={{ scale: 1.02 }}
-                      whileFocus={{ scale: 1.02 }}
-                      className="group"
-                    >
-                      <label
-                        className={`block text-sm font-semibold mb-3 ${
-                          darkMode ? "text-gray-200" : "text-gray-700"
-                        }`}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    {["firstName", "lastName"].map((field, i) => (
+                      <motion.div
+                        key={field}
+                        whileHover={{ scale: 1.02 }}
+                        whileFocus={{ scale: 1.02 }}
+                        className="group"
                       >
-                        <User className="w-4 h-4 inline mr-2" />
-                        First Name
-                      </label>
-                      <input
-                        type="text"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleInputChange}
-                        required
-                        className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 ${
-                          darkMode
-                            ? "bg-gray-800/50 border-gray-600 text-white placeholder-gray-400"
-                            : "bg-white/80 border-gray-200 text-gray-900 placeholder-gray-500"
-                        }`}
-                        placeholder="John"
-                      />
-                    </motion.div>
-
-                    <motion.div
-                      whileHover={{ scale: 1.02 }}
-                      whileFocus={{ scale: 1.02 }}
-                      className="group"
-                    >
-                      <label
-                        className={`block text-sm font-semibold mb-3 ${
-                          darkMode ? "text-gray-200" : "text-gray-700"
-                        }`}
-                      >
-                        <User className="w-4 h-4 inline mr-2" />
-                        Last Name
-                      </label>
-                      <input
-                        type="text"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleInputChange}
-                        required
-                        className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 ${
-                          darkMode
-                            ? "bg-gray-800/50 border-gray-600 text-white placeholder-gray-400"
-                            : "bg-white/80 border-gray-200 text-gray-900 placeholder-gray-500"
-                        }`}
-                        placeholder="Doe"
-                      />
-                    </motion.div>
+                        <label
+                          className={`block text-sm font-semibold mb-2 ${
+                            darkMode ? "text-gray-200" : "text-gray-700"
+                          }`}
+                        >
+                          <User className="w-4 h-4 inline mr-2" />
+                          {field === "firstName" ? "First Name" : "Last Name"}
+                        </label>
+                        <input
+                          type="text"
+                          name={field}
+                          value={formData[field as keyof typeof formData]}
+                          onChange={handleInputChange}
+                          required
+                          className={`w-full px-4 py-3 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 ${
+                            darkMode
+                              ? "bg-gray-800/50 border-gray-600 text-white placeholder-gray-400"
+                              : "bg-white/80 border-gray-200 text-gray-900 placeholder-gray-500"
+                          }`}
+                          placeholder={field === "firstName" ? "John" : "Doe"}
+                        />
+                      </motion.div>
+                    ))}
                   </div>
 
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileFocus={{ scale: 1.02 }}
-                    className="group"
-                  >
+                  <motion.div className="group">
                     <label
-                      className={`block text-sm font-semibold mb-3 ${
+                      className={`block text-sm font-semibold mb-2 ${
                         darkMode ? "text-gray-200" : "text-gray-700"
                       }`}
                     >
@@ -370,7 +341,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 ${
+                      className={`w-full px-4 py-3 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 ${
                         darkMode
                           ? "bg-gray-800/50 border-gray-600 text-white placeholder-gray-400"
                           : "bg-white/80 border-gray-200 text-gray-900 placeholder-gray-500"
@@ -379,13 +350,9 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                     />
                   </motion.div>
 
-                  <motion.div
-                    whileHover={{ scale: 1.02 }}
-                    whileFocus={{ scale: 1.02 }}
-                    className="group"
-                  >
+                  <motion.div className="group">
                     <label
-                      className={`block text-sm font-semibold mb-3 ${
+                      className={`block text-sm font-semibold mb-2 ${
                         darkMode ? "text-gray-200" : "text-gray-700"
                       }`}
                     >
@@ -393,12 +360,12 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                       Message
                     </label>
                     <textarea
-                      rows={5}
+                      rows={4}
                       name="message"
                       value={formData.message}
                       onChange={handleInputChange}
                       required
-                      className={`w-full px-4 py-4 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 resize-none ${
+                      className={`w-full px-4 py-3 rounded-xl border-2 transition-all duration-300 focus:ring-4 focus:ring-blue-500/20 focus:border-blue-500 resize-none ${
                         darkMode
                           ? "bg-gray-800/50 border-gray-600 text-white placeholder-gray-400"
                           : "bg-white/80 border-gray-200 text-gray-900 placeholder-gray-500"
@@ -411,7 +378,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
                     type="submit"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`w-full py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg ${
+                    className={`w-full py-3 rounded-xl font-semibold text-base transition-all duration-300 shadow-lg ${
                       isSubmitted
                         ? "bg-green-500 hover:bg-green-600"
                         : "bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700"

@@ -3,3 +3,6 @@ The topic is, top 10 countries with the best standard of living. make it in .md 
 
 Write a blog post that feels like a cozy chat over coffee. The tone should be warm, emotional, and sympathetic, that moves the reader.  
 The topic is should be about the Texas flooding, give it a click bait title. make it in .md file format. it should have a title, summary, date, random image, and category.
+
+
+convert this into an .md file format. it should have a title, summary, date, random image, and category.

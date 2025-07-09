@@ -239,7 +239,7 @@ export default function PostContent({
               <img
                 src={image}
                 alt="Thinking man with question mark"
-                className="w-[90%] md:w-[30%] mx-auto mb-10 rounded-lg"
+                className="w-[94%] md:w-[60%] mx-auto mb-10 rounded-lg"
               />
 
               <div
