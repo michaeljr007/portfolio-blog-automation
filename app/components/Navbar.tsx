@@ -253,7 +253,15 @@ export default function Nav({
                     >
                       <Link
                         href={item.href}
-                        onClick={() => setIsMobileMenuOpen(false)}
+                        onClick={(e) => {
+                          e.preventDefault();
+                          const id = item.href.replace("#", "");
+                          const el = document.getElementById(id);
+                          if (el) {
+                            el.scrollIntoView({ behavior: "smooth" });
+                          }
+                          setIsMobileMenuOpen(false);
+                        }}
                         className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 group ${
                           activeSection === item.href.slice(1)
                             ? "bg-blue-600 text-white shadow-lg"
