@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ancestor-group.com.ng
+
+# Sitemaps
+Sitemap: https://ancestor-group.com.ng/sitemap.xml

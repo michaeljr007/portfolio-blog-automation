@@ -13,6 +13,7 @@
     "lucide-react": "^0.525.0",
     "next": "13.4.12",
     "next-seo": "^6.8.0",
+    "next-sitemap": "^4.2.3",
     "openai": "^5.8.2",
     "path": "^0.12.7",
     "react": "18.2.0",
@@ -33,9 +34,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "generate-post": "node scripts/generatePost.js",
+    "generate-post": "node scripts/generatePost.ts",
     "deploy": "git add . && git commit -m \"Add new blog post\" && git push origin master",
-    "daily-blog": "npm run generate-post && npm run build && npm run deploy"
+    "daily-blog": "npm run generate-post && npm run build && npm run deploy",
+    "postbuild": "next-sitemap"
   },
   "devDependencies": {
     "@types/node": "24.0.10",
