@@ -254,13 +254,16 @@ export default function Nav({
                       <Link
                         href={item.href}
                         onClick={(e) => {
-                          if (item.href !== "/blog") {
+                          if (item.href.startsWith("#")) {
                             e.preventDefault();
                             const id = item.href.replace("#", "");
                             const el = document.getElementById(id);
                             if (el) {
                               el.scrollIntoView({ behavior: "smooth" });
                             }
+                            setIsMobileMenuOpen(false);
+                          } else if (item.href === "/blog") {
+                            // Let default navigation handle the blog link
                             setIsMobileMenuOpen(false);
                           }
                         }}
