@@ -254,13 +254,15 @@ export default function Nav({
                       <Link
                         href={item.href}
                         onClick={(e) => {
-                          e.preventDefault();
-                          const id = item.href.replace("#", "");
-                          const el = document.getElementById(id);
-                          if (el) {
-                            el.scrollIntoView({ behavior: "smooth" });
+                          if (item.href !== "/blog") {
+                            e.preventDefault();
+                            const id = item.href.replace("#", "");
+                            const el = document.getElementById(id);
+                            if (el) {
+                              el.scrollIntoView({ behavior: "smooth" });
+                            }
+                            setIsMobileMenuOpen(false);
                           }
-                          setIsMobileMenuOpen(false);
                         }}
                         className={`flex items-center justify-between p-4 rounded-xl transition-all duration-300 group ${
                           activeSection === item.href.slice(1)
