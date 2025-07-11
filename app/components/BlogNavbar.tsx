@@ -139,7 +139,7 @@ export default function BlogNav({
             >
               <motion.div className="relative">
                 <Link
-                  href="/"
+                  href="https://ancestor-group.com.ng"
                   className={`relative px-4 py-2 rounded-xl font-medium transition-all duration-300 flex items-center space-x-2 group ${
                     isActive("home")
                       ? "bg-gradient-to-r from-blue-500 to-purple-600 text-white"
