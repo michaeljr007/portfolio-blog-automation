@@ -2,13 +2,13 @@
 title: "Lowe's CEO Just Dropped a Truth Bomb: Forget the Corner Office, Grab a Hammer (and Some Coffee!)"
 summary: "Lowe's CEO Marvin Ellison warns young professionals against chasing corner offices, highlighting the enduring value of skilled trades in an AI-driven world. We dive into why getting your hands dirty might be the best career advice you'll hear all year."
 date: "2025-07-11"
-image: "randomimg"
+image: "https://media.bizj.us/view/img/12345228/marvin-ellison-lowes-store-mk003edit*1200xx6932-5199-432-0.jpg"
 category: "Career Advice"
 ---
 
 # Lowe's CEO Just Dropped a Truth Bomb: Forget the Corner Office, Grab a Hammer (and Some Coffee!)
 
-Okay, friends, grab your favorite mug (mine has a picture of a particularly grumpy cat – relatable, right?), because we need to talk. Something *juicy* happened in the business world, and it's not about some tech bro launching another app that tells you what kind of avocado you are. (Seriously, those exist.)
+Okay, friends, grab your favorite mug (mine has a picture of a particularly grumpy cat – relatable, right?), because we need to talk. Something _juicy_ happened in the business world, and it's not about some tech bro launching another app that tells you what kind of avocado you are. (Seriously, those exist.)
 
 This is about Marvin Ellison, the CEO of Lowe's, who, in a move that's as refreshing as a perfectly brewed iced latte on a sweltering day, told young workers to maybe, just maybe, rethink their corner office dreams. His reasoning? "AI isn’t going to fix a hole in your roof." BOOM. Mic drop. I almost choked on my biscotti.
 
@@ -20,17 +20,17 @@ But is that really the whole story? Is that really where happiness and job secur
 
 Ellison's words hit a nerve because they challenge this very perception. He’s essentially saying, "Hey, kids, that shimmering mirage in the distance might not be all it's cracked up to be." He suggests that focusing solely on climbing that corporate ladder could be a short-sighted strategy, especially in a world increasingly dominated by algorithms and automation.
 
-Let's be honest, how many of us actually *use* all the skills we learned in college? I, for one, haven’t used my knowledge of 18th-century French literature *once* since graduation. (Unless you count using it to sound impressive at parties, which…well, maybe half a point.)
+Let's be honest, how many of us actually _use_ all the skills we learned in college? I, for one, haven’t used my knowledge of 18th-century French literature _once_ since graduation. (Unless you count using it to sound impressive at parties, which…well, maybe half a point.)
 
 ## AI vs. the Real World: The Battle of the Bricklayers
 
-Here's the thing: AI is amazing. It can analyze data faster than you can say “spreadsheet,” write marketing copy that’s… passable (okay, sometimes even good!), and even drive a car (though I'm still a bit nervous about letting a robot parallel park my car). But can it unclog a toilet at 3 AM? Can it build a deck that will withstand a hurricane? Can it rewire your house without setting it on fire? (Please, *please* don’t try this at home.)
+Here's the thing: AI is amazing. It can analyze data faster than you can say “spreadsheet,” write marketing copy that’s… passable (okay, sometimes even good!), and even drive a car (though I'm still a bit nervous about letting a robot parallel park my car). But can it unclog a toilet at 3 AM? Can it build a deck that will withstand a hurricane? Can it rewire your house without setting it on fire? (Please, _please_ don’t try this at home.)
 
 The answer, my friends, is a resounding NO.
 
 That's where the skilled trades come in. Plumbers, electricians, carpenters, HVAC technicians – these are the unsung heroes of our society. They're the ones who keep our homes running, our buildings standing, and our lives comfortable (and dry!). And guess what? They're in incredibly high demand.
 
-Think about it: everyone needs a plumber eventually. AI isn't going to magically fix that leaky faucet. In fact, the more technologically advanced our world becomes, the *more* we rely on these skilled professionals. Because who's going to install the charging station for your self-driving car? A robot? I think not!
+Think about it: everyone needs a plumber eventually. AI isn't going to magically fix that leaky faucet. In fact, the more technologically advanced our world becomes, the _more_ we rely on these skilled professionals. Because who's going to install the charging station for your self-driving car? A robot? I think not!
 
 ## Getting Your Hands Dirty: It's Not Just a Catchphrase
 
@@ -38,7 +38,7 @@ Now, I know what some of you might be thinking: "But isn't working in the trades
 
 But here's the secret: it's also incredibly rewarding. There's a tangible satisfaction that comes from creating something with your own hands, from solving a problem that directly impacts someone's life, from knowing that you're providing a valuable service. Plus, you're learning a skill that will always be in demand.
 
-And let's not forget the earning potential. Skilled tradespeople can make a *very* comfortable living. In many cases, they can even earn more than their white-collar counterparts stuck in those corner offices. (Suddenly, that grease under the fingernails doesn’t seem so bad, does it?)
+And let's not forget the earning potential. Skilled tradespeople can make a _very_ comfortable living. In many cases, they can even earn more than their white-collar counterparts stuck in those corner offices. (Suddenly, that grease under the fingernails doesn’t seem so bad, does it?)
 
 ## Beyond the Trades: The Importance of Practical Skills
 

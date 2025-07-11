@@ -48,11 +48,15 @@ export default function RootLayout({
           rel="icon"
           href="https://res.cloudinary.com/ded2uopl7/image/upload/v1751852355/michaelLogo_s5lfc6.jpg"
         />
-        <script async src="//www.ezojs.com/ezoic/sa.min.js"></script>
-        <script>
-          window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd =
-          ezstandalone.cmd || [];
-        </script>
+        <script async src="//www.ezojs.com/ezoic/sa.min.js" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.ezstandalone = window.ezstandalone || {};
+              ezstandalone.cmd = ezstandalone.cmd || [];
+            `,
+          }}
+        />
         <title>{metadata.title}</title>
       </head>
       <body>{children}</body>
