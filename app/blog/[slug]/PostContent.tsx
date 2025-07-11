@@ -13,6 +13,7 @@ import {
   Bookmark,
 } from "lucide-react";
 import BlogNav from "@/components/BlogNavbar";
+import Head from "next/head";
 
 export default function PostContent({
   title,
@@ -21,6 +22,8 @@ export default function PostContent({
   date,
   image,
   readTime = "5 min read",
+  description,
+  slug,
 }) {
   const [activeSection, setActiveSection] = useState("blog");
   const [darkMode, setDarkMode] = useState(true);
@@ -115,6 +118,27 @@ export default function PostContent({
 
   return (
     <>
+      <Head>
+        <title>{title} | Ancestor Group</title>
+        <meta
+          name="description"
+          content={description || "Read this article."}
+        />
+        <link
+          rel="canonical"
+          href={`https://ancestor-group.com.ng/blog/${slug}`}
+        />
+        {/* Social sharing */}
+        <meta property="og:title" content={title} />
+        <meta
+          property="og:description"
+          content={description || "Read this article."}
+        />
+        <meta
+          property="og:url"
+          content={`https://ancestor-group.com.ng/blog/${slug}`}
+        />
+      </Head>
       <BlogNav
         darkMode={darkMode}
         activeSection={activeSection}

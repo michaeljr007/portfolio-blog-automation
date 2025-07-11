@@ -48,6 +48,8 @@ export default async function Post({ params }) {
     <PostContent
       date={data.date}
       title={data.title}
+      description={data.summary}
+      slug={decodedSlug}
       contentHtml={contentHtml}
       image={data.image}
     />
