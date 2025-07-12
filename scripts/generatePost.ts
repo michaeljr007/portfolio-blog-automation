@@ -84,7 +84,7 @@ async function generatePosts() {
       await retry(
         async () => {
           const prompt = `
-Write a blog post that feels like a cozy chat over coffee. The tone should be warm, relatable, lightly witty, and peppered with small humorous observations that make the reader smile.
+Write a blog post that feels like a friendly discussion with an individual. The tone should be warm, relatable, lightly witty, and peppered with small humorous observations that make the reader smile.
 The topic is: "${topic}". It should have a catchy click-baity title, and be at least 1100 words.
 Return only a raw JSON object with the following structure. DO NOT wrap in markdown:
 
