@@ -145,6 +145,10 @@ export default function PostContent({
           name="description"
           content={description || "Read this article."}
         />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-8289355156432466"
+        ></meta>
         <link
           rel="canonical"
           href={`https://ancestor-group.com.ng/blog/${slug}`}

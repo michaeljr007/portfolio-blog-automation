@@ -44,6 +44,10 @@ export default function RootLayout({
           name="twitter:image"
           content="https://res.cloudinary.com/ded2uopl7/image/upload/v1751852355/michaelLogo_s5lfc6.jpg"
         />
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-8289355156432466"
+        ></meta>
 
         <link
           rel="icon"
