@@ -141,7 +141,7 @@ export default function ContactSection({ darkMode }: ContactSectionProps) {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-7xl mx-auto scale-[.8] md:scale-[1.1]"
+          className="max-w-7xl mx-auto scale-[.8] md:scale-[1]"
         >
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
