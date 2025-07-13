@@ -1,3 +1,4 @@
+import Script from "next/script";
 import "../styles/globals.css";
 
 export const metadata = {
@@ -56,6 +57,12 @@ export default function RootLayout({
               ezstandalone.cmd = ezstandalone.cmd || [];
             `,
           }}
+        />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8289355156432466"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
         <title>{metadata.title}</title>
       </head>
