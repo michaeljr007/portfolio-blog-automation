@@ -2,8 +2,8 @@
 title: "Bernie's AI Apocalypse: Is Your Job About to be Replaced by a Robot (and Your Boss Getting Richer)?!"
 summary: "Bernie Sanders is worried about AI – and not just the Skynet kind. He's talking about how it could worsen inequality, enrich billionaires, and lead to mass unemployment. We delve into his concerns, the fight for a 32-hour work week, and whether we're all doomed to be replaced by super-smart algorithms (Spoiler alert: Maybe, but let's talk about it!)."
 date: "2025-07-15"
-image: "randomimg"
-category: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEkAljG33-_-OvaogVpvS1glsFM4NMyiz8dw&s"
+image: "https://live-production.wcms.abc-cdn.net.au/18e9c31fa35279e5e367dcd21ea3a8b3?impolicy=wcms_crop_resize&cropH=1612&cropW=2865&xPos=0&yPos=0&width=862&height=485"
+category: "Technology"
 ---
 
 Okay, friend, let's talk. Grab your beverage of choice (mine's tea, because I'm trying to be sophisticated, but realistically, it's just lukewarm coffee with a concerning amount of creamer) and settle in. We're about to dive into a topic that's both fascinating and, let's be honest, a little terrifying: Artificial Intelligence. Specifically, what Senator Bernie Sanders has to say about it.
