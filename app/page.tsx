@@ -147,7 +147,7 @@ export default function Home() {
         darkMode={darkMode}
       />
       <HomeSection darkMode={darkMode} />
-      <AboutSection darkMode={darkMode} />
+      {/* <AboutSection darkMode={darkMode} /> */}
       <PortfolioSection
         filter={filter}
         setFilter={setFilter}
