@@ -289,12 +289,12 @@ const BlogHome = ({ posts }) => {
       {/* Visme form */}
       <div
         className="visme_d"
-        data-title="B2B Newsletter Subscription"
-        data-url="nmnn8913-b2b-newsletter-subscription?fullPage=true"
+        data-title="Blog signup"
+        data-url="j0n81wwg-blog-signup"
         data-domain="forms"
-        data-full-page="true"
-        data-min-height="100vh"
-        data-form-id="135817"
+        data-full-page="false"
+        data-min-height="500px"
+        data-form-id="137232"
       ></div>
       <Nav
         darkMode={darkMode}
