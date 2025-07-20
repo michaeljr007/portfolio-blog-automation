@@ -286,16 +286,6 @@ const BlogHome = ({ posts }) => {
 
   return (
     <>
-      {/* Visme form */}
-      <div
-        className="visme_d"
-        data-title="Blog signup"
-        data-url="j0n81wwg-blog-signup"
-        data-domain="forms"
-        data-full-page="false"
-        data-min-height="500px"
-        data-form-id="137232"
-      ></div>
       <Nav
         darkMode={darkMode}
         activeSection={activeSection}
@@ -448,6 +438,16 @@ const BlogHome = ({ posts }) => {
             </motion.div>
           )}
         </div>
+        {/* Visme form */}
+        <div
+          className="visme_d"
+          data-title="Blog signup"
+          data-url="j0n81wwg-blog-signup"
+          data-domain="forms"
+          data-full-page="false"
+          data-min-height="500px"
+          data-form-id="137232"
+        ></div>
       </div>
     </>
   );

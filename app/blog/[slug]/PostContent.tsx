@@ -129,16 +129,6 @@ export default function PostContent({
 
   return (
     <>
-      {/* Visme form */}
-      <div
-        className="visme_d"
-        data-title="Blog signup"
-        data-url="j0n81wwg-blog-signup"
-        data-domain="forms"
-        data-full-page="false"
-        data-min-height="500px"
-        data-form-id="137232"
-      ></div>
       <Head>
         <title>{title} | Ancestor Group</title>
         <meta
@@ -297,6 +287,17 @@ export default function PostContent({
               />
             </motion.div>
           </motion.article>
+
+          {/* Visme form */}
+          <div
+            className="visme_d"
+            data-title="Blog signup"
+            data-url="j0n81wwg-blog-signup"
+            data-domain="forms"
+            data-full-page="false"
+            data-min-height="500px"
+            data-form-id="137232"
+          ></div>
 
           {/* Footer Actions */}
           <motion.div
