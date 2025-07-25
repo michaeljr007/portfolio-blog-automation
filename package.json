@@ -35,7 +35,7 @@
     "build": "next build",
     "start": "next start",
     "generate-post": "node scripts/generatePost.ts",
-    "deploy": "git add . && git commit -m \"Add new blog post\" && git push origin master",
+    "deploy": "npm run build && git add . && git commit -m \"Add new blog post\" && git push origin master",
     "daily-blog": "npm run generate-post && npm run build && npm run deploy",
     "postbuild": "next-sitemap"
   },
